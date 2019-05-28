@@ -1,0 +1,41 @@
+// @mixin center {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, 50%);
+// }
+
+@mixin inputField {
+    height: 36px;
+    padding-left: 10px;
+    background-color: $inputColor;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+@mixin placeholder {
+    &::placeholder {
+        font-family: $mainFont;
+        font-weight: 500;
+        font-size: $imputFontSize;
+        color: $lightGrey;
+    }
+}
+
+@mixin roundBorder {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+@mixin bottomText {
+    font-size: $bottomText;
+    color: $lightGrey;
+    text-align: center;
+    &_linked {
+        text-decoration: none;
+        color: $grey;
+        font-weight: 600;
+    }
+}

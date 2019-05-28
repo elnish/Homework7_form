@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    width: 426px;
+    height: 521px;
+    padding: 50px 40px 85px 40px;
+    font-family: $mainFont;
+    background-color: $containerColor;
+    &__header {
+        color: $lightGrey;
+        font-size: $mainFontSize;
+        &_bold {
+            color: $grey;
+            width: bold;
+        }
+    }
+    &__form {
+        background-color: $white;
+        width: 340px;
+        height: 350px;
+        border-radius: 8px;
+        box-shadow: 4px 2px 2px 2px rgba(171, 171, 171, .2);
+        padding: 30px 27px 27px 15px;
+    }
+}
+
+.form {
+    &__input {
+        &_short {
+            width: 138px;
+            @include inputField;
+            @include placeholder;
+        }
+        &_full {
+            width: 100%;
+            margin-top: 15px;
+            @include inputField;
+            @include placeholder;
+        }  
+    }
+    &__btn {
+        width: 96px;
+        height: 36px;
+        background-color: $btnColor;
+        color: $white;
+        font-size: 14px;
+        @include roundBorder;
+        cursor: pointer;
+    }
+    &__login {
+        @include bottomText;
+    }
+    &__info {
+        @include bottomText;
+    }
+}
+
+.checkbox {
+    &__label {
+        @include bottomText;
+    }  
+}

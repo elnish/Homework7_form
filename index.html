@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="container__header"><span class="container__header_bold">Signup</span> Form</h1>
+           
+        <form class="container__form" action="#">
+            <input type="text" name="name" class="form__input_short" placeholder="First Name">
+            <input type="text" name="surname" class="form__input_short" placeholder="Last Name">
+            <input type="text" name="username" class="form__input_full" placeholder="Username">
+            <input type="email" name="email" class="form__input_full" placeholder="Email Address">
+            <input type="password" name="password" class="form__input_full" placeholder="Password">
+            <input type="checkbox" name="checkbox" class="form__checkbox checkbox">
+            <label for="checkbox" class="checkbox__label" required>I agree to the <a href="#" class="checkbox__label_linked">terms of use</a></label>
+            <button class="form__btn">Sing Up</button>
+            <p class="form__login">Have an acount with us?<a href="#" class="form__login_linked"> Login here</a></p>
+            <p class="form__info">More info about us<a href="#" class="form__info_linked"> here...</a></p>
+        </form>
+    </div>
+</body>
+</html>
