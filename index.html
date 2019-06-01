@@ -12,16 +12,16 @@
         <h1 class="container__header"><span class="container__header_bold">Signup</span> Form</h1>
            
         <form class="container__form" action="#">
-            <input type="text" name="name" class="form__input_short" placeholder="First Name">
-            <input type="text" name="surname" class="form__input_short" placeholder="Last Name">
-            <input type="text" name="username" class="form__input_full" placeholder="Username">
-            <input type="email" name="email" class="form__input_full" placeholder="Email Address">
-            <input type="password" name="password" class="form__input_full" placeholder="Password">
-            <input type="checkbox" name="checkbox" class="form__checkbox checkbox">
-            <label for="checkbox" class="checkbox__label" required>I agree to the <a href="#" class="checkbox__label_linked">terms of use</a></label>
-            <button class="form__btn">Sing Up</button>
-            <p class="form__login">Have an acount with us?<a href="#" class="form__login_linked"> Login here</a></p>
-            <p class="form__info">More info about us<a href="#" class="form__info_linked"> here...</a></p>
+            <input type="text" name="name" class="container__input container__input_short container__input_focus" placeholder="First Name">
+            <input type="text" name="surname" class="container__input container__input_short container__input_focus" placeholder="Last Name">
+            <input type="text" name="username" class="container__input container__input_full container__input_focus" placeholder="Username">
+            <input type="email" name="email" class="container__input container__input_full container__input_focus" placeholder="Email Address">
+            <input type="password" name="password" class="container__input container__input_full container__input_focus container__input_icon" placeholder="Password">
+            <input type="checkbox" id="agree" name="checkbox" class="container__checkbox">
+            <label for="agree" class="container__text" required>I agree to the <a href="#" class="container__terms container__terms_linked container__terms_hover">terms of use</a></label>
+            <button class="container__btn container__btn_orange container__btn_hover">Sing Up</button>
+            <p class="container__text">Have an acount with us?<a href="#" class="container__login container__login_linked container__login_hover"> Login here</a></p>
+            <p class="container__text">More info about us<a href="#" class="container__about container__about_linked container__about_hover"> here...</a></p>
         </form>
     </div>
 </body>

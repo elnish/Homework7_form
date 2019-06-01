@@ -6,88 +6,92 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 426px;
-  height: 521px;
-  padding: 50px 40px 85px 40px;
+  width: 425px;
+  height: 520px;
+  padding: 45px 40px 0 40px;
   font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   background-color: #F7F7F7; }
   .container__header {
     color: #A4A4A4;
-    font-size: 22px; }
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 16px; }
     .container__header_bold {
       color: #787878;
-      width: bold; }
+      width: 600; }
   .container__form {
     background-color: #fff;
     width: 340px;
     height: 350px;
-    border-radius: 8px;
-    box-shadow: 4px 2px 2px 2px rgba(171, 171, 171, 0.2);
-    padding: 30px 27px 27px 15px; }
-
-.form__input_short {
-  width: 138px;
-  height: 36px;
-  padding-left: 10px;
-  background-color: #f0f0f0;
-  outline: none;
-  border: none;
-  border-radius: 5px; }
-  .form__input_short::placeholder {
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 28px 0 0 28px; }
+  .container__input {
+    height: 35px;
+    padding-left: 10px;
+    background-color: #f0f0f0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px; }
+    .container__input::placeholder {
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #A4A4A4; }
+    .container__input_short {
+      width: 135px;
+      margin-right: 16px; }
+    .container__input_full {
+      width: 285px;
+      margin-right: 28px; }
+    .container__input_focus:focus {
+      box-shadow: 0 0 3px #fea15d; }
+  .container__text {
+    font-size: 11px;
+    color: #A4A4A4;
+    text-align: center;
+    font-weight: 300; }
+  .container__terms_linked {
+    text-decoration: none;
+    color: #787878;
+    font-weight: 400; }
+  .container__terms_hover:hover {
+    color: #fea15d; }
+  .container__btn {
+    width: 95px;
+    height: 35px;
     font-size: 14px;
-    color: #A4A4A4; }
-
-.form__input_full {
-  width: 100%;
-  margin-top: 15px;
-  height: 36px;
-  padding-left: 10px;
-  background-color: #f0f0f0;
-  outline: none;
-  border: none;
-  border-radius: 5px; }
-  .form__input_full::placeholder {
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #A4A4A4; }
-
-.form__btn {
-  width: 96px;
-  height: 36px;
-  background-color: #FEA15D;
-  color: #fff;
-  font-size: 14px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer; }
-
-.form__login {
-  font-size: 11px;
-  color: #A4A4A4;
-  text-align: center; }
-  .form__login_linked {
+    display: block;
+    margin: 10px 0 0 90px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color .6s linear, color .7s linear, border .7s linear; }
+    .container__btn_orange {
+      background-color: #fea15d;
+      color: #fff; }
+    .container__btn_hover:hover {
+      background-color: #fff;
+      color: #fea15d;
+      border: 1px solid #fea15d; }
+  .container__login_linked {
     text-decoration: none;
     color: #787878;
-    font-weight: 600; }
-
-.form__info {
-  font-size: 11px;
-  color: #A4A4A4;
-  text-align: center; }
-  .form__info_linked {
-    text-decoration: none;
-    color: #787878;
-    font-weight: 600; }
-
-.checkbox__label {
-  font-size: 11px;
-  color: #A4A4A4;
-  text-align: center; }
-  .checkbox__label_linked {
-    text-decoration: none;
-    color: #787878;
-    font-weight: 600; }
+    font-weight: 400; }
+  .container__login_hover:hover {
+    color: #fea15d; }
+  .container__login_linked {
+    font-weight: 900; }
+  .container__about {
+    font-weight: 200; }
+    .container__about_linked {
+      text-decoration: none;
+      color: #787878;
+      font-weight: 400; }
+    .container__about_hover:hover {
+      color: #fea15d; }

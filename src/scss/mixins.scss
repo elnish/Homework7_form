@@ -6,7 +6,6 @@
 // }
 
 @mixin inputField {
-    height: 36px;
     padding-left: 10px;
     background-color: $inputColor;
     outline: none;
@@ -33,9 +32,19 @@
     font-size: $bottomText;
     color: $lightGrey;
     text-align: center;
+    font-weight: 300;
+   
+}
+
+@mixin linkText {
     &_linked {
         text-decoration: none;
         color: $grey;
-        font-weight: 600;
+        font-weight: 400;
+    }
+    &_hover {
+        &:hover {
+            color: $btnColor;
+        }
     }
 }
